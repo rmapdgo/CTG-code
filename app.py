@@ -7,6 +7,7 @@ import threading
 import pandas as pd
 from dash import Dash, html, dcc, dash_table, Input, Output, State, callback_context
 import dash
+import openpyxl
 
 # ---------- Constants (packet state) ----------
 AVALONFM30_PACKETSTATE_IDLE = 0
@@ -782,3 +783,4 @@ def download_excel(n_clicks):
 if __name__ == "__main__":
     app.run(debug=True, port=8050)
     
+
